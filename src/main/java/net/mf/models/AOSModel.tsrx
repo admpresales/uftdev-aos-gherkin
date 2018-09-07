@@ -5,7 +5,7 @@
     <objects>
         <object type="Link" technology="Web">
             <name>MICE_tile</name>
-            <codeName>MICE_tile</codeName>
+            <codeName>MICEShopNowLink</codeName>
             <description></description>
             <identification>
                 <properties>
