@@ -130,7 +130,6 @@
                 </executions>
                 <!--optional parameters -->
                 <configuration>
-                    <inPlace>true</inPlace>
                 </configuration>
             </plugin>
             <plugin>
@@ -139,10 +138,11 @@
                 <configuration>
                     <filesets>
                         <fileset>
-                            <directory>RunResults</directory>
-                            <directory>gherkin-results</directory>
                             <directory>${basedir}</directory>
                             <includes>
+                                <include>**/RunResults/**</include>
+                                <include>**/gherkin-results/**</include>
+                                <incluee>**/appmodels/**</incluee>
                                 <include>**/*Results.xml</include>
                             </includes>
                             <followSymlinks>false</followSymlinks>
