@@ -9,58 +9,76 @@ The below assume you have performed a default installation of UFT Pro (LeanFT). 
 The following maven goals were used to add the 14.50.0 lft libraries to the local maven cache (.m2) for IntelliJ 2017.3 on a Apple Mac
 The lines below were executed using IntelliJ UI.
 
-install:install-file -Dfile="/Applications/LeanFT/sdk/Java/com.hp.lft.sdk-standalone.jar" -DgroupId=com.hp.lft -DartifactId=sdk -Dversion=14.50.0 -Dpackaging=jar
+install:install-file -Dfile=/Applications/LeanFT/sdk/Maven/com.hp.lft.common-14.50.0.jar -DpomFile=/Applications/LeanFT/sdk/Maven/com.hp.lft.common-14.50.0-pom.xml
 
-install:install-file -Dfile="/Applications/LeanFT/sdk/Java/com.hp.lft.sdk-javadoc.jar" -DgroupId=com.hp.lft -DartifactId=sdk -Dclassifier=javadoc -Dversion=14.50.0 -Dpackaging=jar
+install:install-file -Dfile=/Applications/LeanFT/sdk/Mavencom.hp.lft.report-14.50.0.jar -DpomFile=/Applications/LeanFT/sdk/Maven/com.hp.lft.report-14.50.0-pom.xml
 
-install:install-file -Dfile="/Applications/LeanFT/sdk/Java/com.hp.lft.unittesting.jar" -DgroupId=com.hp.lft -DartifactId=unittesting -Dversion=14.50.0 -Dpackaging=jar
+install:install-file -Dfile=/Applications/LeanFT/sdk/Maven/ccom.hp.lft.reportbuilder-14.50.0.jar -DpomFile=/Applications/LeanFT/sdk/Maven/com.hp.lft.reportbuilder-14.50.0-pom.xml
 
-install:install-file -Dfile="/Applications/LeanFT/sdk/Java/com.hp.lft.verifications.jar" -DgroupId=com.hp.lft -DartifactId=verifications -Dversion=14.50.0 -Dpackaging=jar
+install:install-file -Dfile=/Applications/LeanFT/sdk/Maven/com.hp.lft.sdk-14.50.0.jar -DpomFile=/Applications/LeanFT/sdk/Maven/com.hp.lft.sdk-14.50.0-pom.xml
 
-install:install-file -Dfile="/Applications/LeanFT/sdk/Java/com.hp.lft.report.jar" -DgroupId=com.hp.lft -DartifactId=report -Dversion=14.50.0 -Dpackaging=jar
+install:install-file -Dfile=/Applications/LeanFT/sdk/Maven/com.hp.lft.unittesting-14.50.0.jar -DpomFile=/Applications/LeanFT/sdk/Maven/com.hp.lft.unittesting-14.50.0-pom.xml
+
+install:install-file -Dfile=/Applications/LeanFT/sdk/Maven/com.hp.lft.verifications-14.50.0.jar -DpomFile=/Applications/LeanFT/sdk/Maven/com.hp.lft.verifications-14.50.0-pom.xml
+
+install:install-file  -Dfile=/Applications/LeanFT/Tools/appmodel-code-generator/Java/appmodel-code-generator-helper.jar  -DpomFile=/Applications/LeanFT/Tools/appmodel-code-generator/Java/appmodel-code-generator-helper-pom.xml
+
+install:install-file  -Dfile=/Applications/LeanFT/Tools/appmodel-code-generator/Java/appmodel-code-generator-mojo-14.50.0.jar  -DpomFile=/Applications/LeanFT/Tools/appmodel-code-generator/Java/appmodel-code-generator-mojo-14.50.0-pom.xml
 
 If maven is installed as a standalone (rather than just a plugin ot IntelliJ) the following should work, though not verified *or* use the terminal screen in IntelliJ and execute the below commands.  Keep in mind it is assuming default installation of LFT 14.0
 
-mvn install:install-file -Dfile="/Applications/LeanFT/sdk/Java/com.hp.lft.sdk-standalone.jar" -DgroupId=com.hp.lft -DartifactId=sdk -Dversion=14.50.0 -Dpackaging=jar
+mvn install:install-file -Dfile=/Applications/LeanFT/sdk/Maven/com.hp.lft.common-14.50.0.jar -DpomFile=/Applications/LeanFT/sdk/Maven/com.hp.lft.common-14.50.0-pom.xml
 
-mvn install:install-file -Dfile="/Applications/LeanFT/sdk/Java/com.hp.lft.sdk-javadoc.jar" -DgroupId=com.hp.lft -DartifactId=sdk -Dclassifier=javadoc -Dversion=14.50.0 -Dpackaging=jar
+mvn install:install-file -Dfile=/Applications/LeanFT/sdk/Maven/com.hp.lft.report-14.50.0.jar -DpomFile=/Applications/LeanFT/sdk/Maven/com.hp.lft.report-14.50.0-pom.xml
 
-mvn install:install-file -Dfile="/Applications/LeanFT/sdk/Java/com.hp.lft.unittesting.jar" -DgroupId=com.hp.lft -DartifactId=unittesting -Dversion=14.50.0 -Dpackaging=jar
+mvn install:install-file -Dfile=/Applications/LeanFT/sdk/Maven/com.hp.lft.reportbuilder-14.50.0.jar -DpomFile=/Applications/LeanFT/sdk/Maven/com.hp.lft.reportbuilder-14.50.0-pom.xml
 
-mvn install:install-file -Dfile="/Applications/LeanFT/sdk/Java/com.hp.lft.verifications.jar" -DgroupId=com.hp.lft -DartifactId=verifications -Dversion=14.50.0 -Dpackaging=jar
+mvn install:install-file -Dfile=/Applications/LeanFT/sdk/Maven/com.hp.lft.sdk-14.50.0.jar -DpomFile=/Applications/LeanFT/sdk/Maven/com.hp.lft.sdk-14.50.0-pom.xml
 
-mvn install:install-file -Dfile="/Applications/LeanFT/sdk/Java/com.hp.lft.report.jar" -DgroupId=com.hp.lft -DartifactId=report -Dversion=14.50.0 -Dpackaging=jar
+mvn install:install-file -Dfile=/Applications/LeanFT/sdk/Maven/com.hp.lft.unittesting-14.50.0.jar -DpomFile=/Applications/LeanFT/sdk/Maven/com.hp.lft.unittesting-14.50.0-pom.xml
 
-mvn install:install-file -Dfile="/Applications/LeanFT/sdk/Java/com.hp.lft.reportbuilder-standalone.jar" -DgroupId=com.hp.lft -DartifactId=reportbuilder -Dversion=14.50.0 -Dpackaging=jar
+mvn install:install-file -Dfile=/Applications/LeanFT/sdk/Maven/com.hp.lft.verifications-14.50.0.jar -DpomFile=/Applications/LeanFT/sdk/Maven/com.hp.lft.verifications-14.50.0-pom.xml
+
+mvn install:install-file  -Dfile=/Applications/LeanFT/Tools/appmodel-code-generator/Java/appmodel-code-generator-helper.jar  -DpomFile=/Applications/LeanFT/Tools/appmodel-code-generator/Java/appmodel-code-generator-helper-pom.xml
+
+mvn install:install-file  -Dfile=/Applications/LeanFT/Tools/appmodel-code-generator/Java/appmodel-code-generator-mojo-14.50.0.jar  -DpomFile=/Applications/LeanFT/Tools/appmodel-code-generator/Java/appmodel-code-generator-mojo-14.50.0-pom.xml
 
 # Ubuntu/Linux
-/usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Java/com.hp.lft.sdk-standalone.jar -DgroupId=com.hp.lft -DartifactId=sdk -Dversion=14.50.0 -Dpackaging=jar
+/usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Maven/com.hp.lft.common-14.50.0.jar -DpomFile=/opt/leanft/sdk/Maven/com.hp.lft.common-14.50.0-pom.xml
 
-/usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Java/com.hp.lft.sdk-javadoc.jar -DgroupId=com.hp.lft -DartifactId=sdk -Dclassifier=javadoc -Dversion=14.50.0 -Dpackaging=jar
+/usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Maven/com.hp.lft.report-14.50.0.jar -DpomFile=/opt/leanft/sdk/Maven/com.hp.lft.report-14.50.0-pom.xml
 
-/usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Java/com.hp.lft.unittesting.jar -DgroupId=com.hp.lft -DartifactId=unittesting -Dversion=14.50.0 -Dpackaging=jar
+/usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Maven/com.hp.lft.reportbuilder-14.50.0.jar -DpomFile=/opt/leanft/sdk/Maven/com.hp.lft.reportbuilder-14.50.0-pom.xml
 
-/usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Java/com.hp.lft.verifications.jar -DgroupId=com.hp.lft -DartifactId=verifications -Dversion=14.50.0 -Dpackaging=jar
+/usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Maven/com.hp.lft.sdk-14.50.0.jar -DpomFile=/opt/leanft/sdk/Maven/com.hp.lft.sdk-14.50.0-pom.xml
 
-/usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Java/com.hp.lft.report.jar -DgroupId=com.hp.lft -DartifactId=report -Dversion=14.50.0 -Dpackaging=jar
+/usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Maven/com.hp.lft.unittesting-14.50.0.jar -DpomFile=/opt/leanft/sdk/Maven/com.hp.lft.unittesting-14.50.0-pom.xml
 
-/usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Java/com.hp.lft.reportbuilder-standalone.jar -DgroupId=com.hp.lft -DartifactId=reportbuilder -Dversion=14.50.0 -Dpackaging=jar
+/usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Maven/com.hp.lft.verifications-14.50.0.jar -DpomFile=/opt/leanft/sdk/Maven/com.hp.lft.verifications-14.50.0-pom.xml
+
+/usr/bin/mvn install:install-file  -Dfile=/opt/leanft//Tools/appmodel-code-generator/Java/appmodel-code-generator-helper.jar  -DpomFile=/opt/leanft//Tools/appmodel-code-generator/Java/appmodel-code-generator-helper-pom.xml
+
+/usr/bin/mvn install:install-file  -Dfile=/opt/leanft//Tools/appmodel-code-generator/Java/appmodel-code-generator-mojo-14.50.0.jar  -DpomFile=/opt/leanft//Tools/appmodel-code-generator/Java/appmodel-code-generator-mojo-14.50.0-pom.xml
 
 # Windows
 If on a windows machine, you should alter the path of where the jar file is located.
 Below can be used for Windows LFT installation assuming it is for LFT 14 with the default installation of LFT
 
-mvn install:install-file -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Java\com.hp.lft.sdk-standalone.jar" -DgroupId=com.hp.lft -DartifactId=sdk -Dversion=14.50.0 -Dpackaging=jar
+mvn install:install-file -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Maven\com.hp.lft.common-14.50.0.jar" -DpomFile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Maven\com.hp.lft.common-14.50.0-pom.xml"
 
-mvn install:install-file -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Java\com.hp.lft.sdk-javadoc.jar" -DgroupId=com.hp.lft -DartifactId=sdk -Dclassifier=javadoc -Dversion=14.50.0 -Dpackaging=jar
+mvn install:install-file -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Maven\com.hp.lft.report-14.50.0.jar" -DpomFile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Maven\com.hp.lft.report-14.50.0-pom.xml"
 
-mvn install:install-file -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Java\com.hp.lft.unittesting.jar" -DgroupId=com.hp.lft -DartifactId=unittesting -Dversion=14.50.0 -Dpackaging=jar
+mvn install:install-file -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Maven\com.hp.lft.reportbuilder-14.50.0.jar" -DpomFile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Maven\com.hp.lft.reportbuilder-14.50.0-pom.xml"
 
-mvn install:install-file -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Java\com.hp.lft.verifications.jar" -DgroupId=com.hp.lft -DartifactId=verifications -Dversion=14.50.0 -Dpackaging=jar
+mvn install:install-file -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Maven\com.hp.lft.sdk-14.50.0.jar" -DpomFile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Maven\com.hp.lft.sdk-14.50.0-pom.xml"
 
-mvn install:install-file -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Java\com.hp.lft.report.jar" -DgroupId=com.hp.lft -DartifactId=report -Dversion=14.50.0 -Dpackaging=jar
+mvn install:install-file -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Maven\com.hp.lft.unittesting-14.50.0.jar" -DpomFile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Maven\com.hp.lft.unittesting-14.50.0-pom.xml"
 
-mvn install:install-file -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Java\com.hp.lft.reportbuilder-standalone.jar" -DgroupId=com.hp.lft -DartifactId=reportbuilder -Dversion=14.50.0 -Dpackaging=jar
+mvn install:install-file -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Maven\com.hp.lft.verifications-14.50.0.jar" -DpomFile="C:\Program Files (x86)\HP\Unified Functional Testing\SDK\Maven\com.hp.lft.verifications-14.50.0-pom.xml"
+
+mvn install:install-file  -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\Tools\appmodel-code-generator/Java/appmodel-code-generator-helper.jar"  -DpomFile="C:\Program Files (x86)\HP\Unified Functional Testing\Tools\appmodel-code-generator/Java/appmodel-code-generator-helper-pom.xml"
+
+mvn install:install-file  -Dfile="C:\Program Files (x86)\HP\Unified Functional Testing\Tools\appmodel-code-generator-mojo-14.50.0.jar"  -DpomFile="C:\Program Files (x86)\HP\Unified Functional Testing\Tools\appmodel-code-generator/Java/appmodel-code-generator-mojo-14.50.0-pom.xml"
 
 # Process to change the test
 
