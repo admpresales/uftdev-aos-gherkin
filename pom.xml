@@ -140,10 +140,10 @@
                         <fileset>
                             <directory>${basedir}</directory>
                             <includes>
-                                <include>**/RunResults/**</include>
-                                <include>**/gherkin-results/**</include>
-                                <incluee>**/appmodels/**</incluee>
-                                <include>**/*Results.xml</include>
+                                <include>RunResults/</include>
+                                <include>gherkin-results/</include>
+                                <incluee>appmodels/</incluee>
+                                <include>*Results.xml</include>
                             </includes>
                             <followSymlinks>false</followSymlinks>
                         </fileset>
